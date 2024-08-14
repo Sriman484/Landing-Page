@@ -75,25 +75,12 @@ nav ul li:hover {
     margin-top: 20px;
 }
 
-.footer {
-    background-color: rgba(0, 0, 0, 0.214);
-    padding: 2%;
-    display: flex;
-    height: 10%;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.footer table tr td {
-    padding: 5px;
-    padding-left: 100px;
-}
-
 .manual {
     height: 300px;
     width: 500px;
     padding-bottom: 20px;
-    display: inline-block;
+    display: flex;
+    flex-direction:column;
     margin-top: 2%;
     margin-left: 70px;
 }
@@ -110,14 +97,17 @@ textarea {
 
 .but1,
 .but2 {
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
 }
-
+.but1{
+    margin-left: 10px;
+}
+.but2{
+    margin-top: -24px;
+    margin-left: 300px;
+}
 .but1:hover,
 .but2:hover {
     background-color: black;
@@ -130,7 +120,7 @@ textarea {
 
 .ad {
     margin-left: 55%;
-    margin-top: -10%;
+    margin-top: -12%;
     margin-bottom: 1.5%;
     padding: 15px;
     width: 500px;
@@ -145,6 +135,19 @@ textarea {
     text-align: center;
 }
 
+.footer {
+    background-color: rgba(0, 0, 0, 0.214);
+    padding: 2%;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer table tr td {
+    padding: 5px;
+    padding-left: 100px;
+}
 @keyframes zoom {
     0% {
         transform: scale(1, 1);
